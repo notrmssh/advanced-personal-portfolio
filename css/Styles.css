@@ -294,3 +294,31 @@ footer {
   font-size: 0.85rem;
   margin-top: 0.25rem;
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.filter-buttons {
+  margin: 1rem 0;
+}
+
+.filter-btn {
+  padding: .5rem 1rem;
+  margin-right: .5rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: var(--acc);
+  color: white;
+}

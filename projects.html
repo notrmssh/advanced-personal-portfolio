@@ -22,40 +22,28 @@
     </nav>
   </header>
 
-  <main class="content-page">
-    <h1>Projects</h1>
+<main class="content-page">
+  <h1>My Projects</h1>
 
-    <section class="project-card">
-      <h2>Personal Portfolio Website</h2>
-      <h3>Challenge</h3>
-      <p>Create a clear structure to present my background, skills and photos.</p>
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-category="all">All Projects</button>
+    <button class="filter-btn" data-category="Web Development">Web Development</button>
+    <button class="filter-btn" data-category="Design">Design</button>
+    <button class="filter-btn" data-category="School Projects">School Projects</button>
+  </div>
 
-      <h3>Solution</h3>
-      <p>Used semantic HTML structure and a consistent layout across all pages.</p>
-    </section>
+  <p id="projectCount"></p>
 
-    <section class="project-card">
-      <h2>Responsive Layout</h2>
-      <h3>Challenge</h3>
-      <p>Make the site easy to use on both mobile and desktop screens.</p>
+  <div id="projectsContainer" class="projects-grid"></div>
 
-      <h3>Solution</h3>
-      <p>Added CSS Grid, Flexbox, and media queries to adapt the design.</p>
-    </section>
+</main>
 
-    <section class="project-card">
-      <h2>Travel Photo Gallery</h2>
-      <h3>Challenge</h3>
-      <p>Show many travel photos without making the page feel crowded.</p>
-
-      <h3>Solution</h3>
-      <p>Designed a 3×3 responsive gallery with captions explaining where each photo was taken.</p>
-    </section>
-  </main>
 
   <footer>
     <p>&copy; 2025 Rana Shalabi. All rights reserved.</p>
   </footer>
+
+<script src="js/projects.js"></script>
 
 </body>
 </html>
