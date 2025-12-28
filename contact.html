@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Rana Shalabi</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Rana Shalabi</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="content-page">
+  <h1>Contact Me</h1>
+  <p>If you'd like to get in touch, feel free to send me a message using the form below.</p>
+
+  <form id="contactForm" class="contact-form" novalidate>
+
+    <label for="firstName">First Name *</label>
+  <input 
+    type="text" 
+    id="firstName" 
+    name="firstName" 
+    placeholder="Your first name" 
+    required
+  >
+  <div class="error-message" id="firstNameError"></div>
+
+  <label for="lastName">Last Name *</label>
+  <input 
+    type="text" 
+    id="lastName" 
+    name="lastName" 
+    placeholder="Your last name" 
+    required
+  >
+  <div class="error-message" id="lastNameError"></div>
+
+  <label for="email">Email *</label>
+  <input 
+    type="email" 
+    id="email" 
+    name="email" 
+    placeholder="your@email.com" 
+    required
+  >
+  <div class="error-message" id="emailError"></div>
+
+  <label for="phone">Phone (optional)</label>
+  <input 
+    type="tel" 
+    id="phone" 
+    name="phone" 
+    placeholder="+46..."
+  >
+  <div class="error-message" id="phoneError"></div>
+
+  <label for="subject">Subject *</label>
+  <select id="subject" name="subject" required>
+    <option value="">-- Please choose a subject --</option>
+    <option value="general">General question</option>
+    <option value="collaboration">Collaboration</option>
+    <option value="feedback">Feedback</option>
+  </select>
+  <div class="error-message" id="subjectError"></div>
+
+  <label for="message">
+    Message * 
+    <span id="messageCounter">0 / 20</span>
+  </label>
+  <textarea 
+    id="message" 
+    name="message" 
+    rows="6" 
+    placeholder="Write your message here (min 20 characters)" 
+    required
+  ></textarea>
+  <div class="error-message" id="messageError"></div>
+
+  <button type="submit" class="btn">Send Message</button>
+  <button type="reset" class="btn" id="clearBtn">Clear</button>
+
+  <p id="formSuccess" class="form-success"></p>
+</form>
+</main>
+
+<footer>
+  <p>&copy; 2025 Rana Shalabi. All rights reserved.</p>
+</footer>
+
+<script src="js/contact.js"></script>
+
+</body>
+</html>
