@@ -34,6 +34,55 @@ a {
   text-decoration: none;
 }
 
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card,
+.about-card,
+.gallery-grid figure,
+header,
+footer {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+
+body.light-theme {
+  background-color: #f4f5fb;
+  color: #222222;
+}
+
+body.light-theme header {
+  background-color: #ffffff;
+}
+
+body.light-theme .about-card,
+body.light-theme .project-card,
+body.light-theme .gallery-grid figure {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+
+body.dark-theme {
+  background-color: #050814;
+  color: #ffffff;
+}
+
+body.blue-theme {
+  background-color: #0b1020;
+  color: #e3f2fd;
+}
+
+body.blue-theme .project-card,
+body.blue-theme .about-card,
+body.blue-theme .gallery-grid figure {
+  background-color: #152347;
+  border-color: #3fa9f5;
+}
+
+
 main {
   padding: 2rem 5%;
 }
@@ -322,3 +371,31 @@ footer {
   background: var(--acc);
   color: white;
 }
+
+
+.theme-switcher {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.theme-btn {
+  border: none;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  background: #1f2740;
+  color: #ffffff;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.theme-btn:hover {
+  transform: translateY(-2px);
+}
+
+.theme-btn.active-theme {
+  background: #3fa9f5;
+  color: #0b1020;
+}
+
