@@ -9,14 +9,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function applyTheme(theme) {
 
-    body.classList.remove('light-theme', 'dark-theme', 'blue-theme');
+    body.classList.remove('light-theme', 'dark-theme', 'pink-theme');
 
     if (theme === 'light') {
       body.classList.add('light-theme');
     } else if (theme === 'dark') {
       body.classList.add('dark-theme');
-    } else if (theme === 'blue') {
-      body.classList.add('blue-theme');
+    } else if (theme === 'pink') {
+      body.classList.add('pink-theme');
     }
 
     themeButtons.forEach(function (btn) {

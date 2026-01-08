@@ -1,6 +1,6 @@
 
 :root {
-  --bg: #0b1020;
+  --bg: #ba829eff;
   --card: #141b2f;
   --acc: #3fa9f5;
   --text: #ffffff;
@@ -70,15 +70,15 @@ body.dark-theme {
   color: #ffffff;
 }
 
-body.blue-theme {
-  background-color: #0b1020;
+body.pink-theme {
+  background-color: #ba829eff;
   color: #e3f2fd;
 }
 
-body.blue-theme .project-card,
-body.blue-theme .about-card,
-body.blue-theme .gallery-grid figure {
-  background-color: #152347;
+body.pink-theme .project-card,
+body.pink-theme .about-card,
+body.pink-theme .gallery-grid figure {
+  background-color: #ba829eff;
   border-color: #3fa9f5;
 }
 
